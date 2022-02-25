@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Landcare NSW - Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link href="style_header_footer.css" rel="stylesheet" type="text/css" />
+    <link href="style_projects_page.css" rel="stylesheet" type="text/css" />
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER section -->
+    <header>
+      <div id="main_header">
+        <!-- LOGO -->
+        <figure>
+          <a href="/index.html"><img src="images/logo.png" alt="Landcare NSW Logo" id="logo"></a>
+        </figure>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <a href="/index.html" class="nav_link">Home</a>
+            <a href="/projects.html" class="nav_link">Projects</a>
+            <a href="/get_involved.html" class="nav_link">Get Involved</a>
+        </nav>
+
+        <!-- DONATE BUTTON -->
+        <button type="button" id="donate_button"><a href="/donate.html">Donate</a></button>
+      </div>
+
+      <!-- HAMBURGER ICON -->
+      <div id="hamburger_icon">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+
+        <!-- DROPDOWN NAVIGATION -->
+        <nav class="dropdown_nav">
+          <a href="/index.html" class="dropdown_link">Home</a>
+          <a href="/projects.html" class="dropdown_link">Projects</a>
+          <a href="/get_involved.html" class="dropdown_link">Get Involved</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- MAIN section -->
+    <main>
+
+      <!-- PROJECTS -->
+      <div id="projects_title">
+        <h2>Projects</h2>
+      </div>
+
+      <!-- Project 1 -->
+      <div id="project_container">
+        <!-- Project image -->
+        <figure>
+          <img src="images/project1.jpg" alt="Project image">
+        </figure>
+
+        <!-- Project information -->
+        <div>
+          <h3>Educational Workshops on Land Care</h3>
+          <p>We provide weekly educational workshops for all age groups in different areas, where people can gain both theoretical and practical knowledge in their interested area. The topics include land conservation, bushfire revegetation, increasing biodiversity, creating an ecosystem for wildlife, as well as learning about the Aboriginal culture and their land care practices.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div id="project_container">
+        <!-- Project information -->
+        <div>
+          <h3>Private Land Conservation</h3>
+          <p>We acknowledge that fact that most of NSW is owned by private land owners so we partner with numerous land owners to care for our land and create a better and healthier future together. We create better ecosystems and biodiversity in NSW through planting a diverse range of native plants, which then creates habitat for wildlife.</p>
+        </div>
+
+        <!-- Project image -->
+        <figure>
+          <img src="images/project2.jpg" alt="Project image">
+        </figure>
+      </div>
+
+      <!-- Project 3 -->
+      <div id="project_container">
+        <!-- Project image -->
+        <figure>
+          <img src="images/project3.jpg" alt="Project image">
+        </figure>
+
+        <!-- Project information -->
+        <div>
+          <h3>Bushfire Revegetation</h3>
+          <p>Australia experiences bushfires every summer due to the lack of rain throughout the year followed by the extreme temperatures. During this time, many ecosystems are disturbed, as well as forests and lands are damaged. So we put a great attention to helping these areas of NSW to be restored to their original self as quick as possible.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div id="project_container">
+        <!-- Project information -->
+        <div>
+          <h3>Aboriginal Community Engagement</h3>
+          <p>Our organisation puts a great emphasis on creating deeper connections with Aboriginal communities as they are the traditional custodians of the land that we now live on. This involves partnerships with Aboriginal communities to collaborate together on Landcare activities. Our aim is to increase recognition of the Aboriginal culture by incoporating cultural protocols and Aboriginal perspectives into our projects.</p>
+        </div>
+
+        <!-- Project image -->
+        <figure>
+          <img src="images/project4.jpg" alt="Project image">
+        </figure>
+      </div>
+
+      
+    </main>
+
+
+    <!-- FOOTER section -->
+    <footer>
+      <div id="footer_info">
+        
+        <!-- Contact Details section -->
+        <div class="footer_container">
+          <h4 class="footer_header">Contact Details</h4>
+          <p>administration@landcarensw.org.au</p>
+          <p>02 8339 4816</p>
+          <p>
+            Unit 7,<br>
+            56 Church Avenue,<br>
+            Mascot NSW 2020<br>
+          </p>
+          <figure>
+            <img src="images/footer_icons.png" alt="Contact details icons" id="footer_icons">
+          </figure>
+        </div>
+
+        <!-- Social media links section -->
+        <div class="footer_container">
+          <h4 class="footer_header">Socials</h4>
+          Follow us on our social media accounts to stay connected and updated.
+          <div id="social_icons">
+            <figure>
+              <a href="https://www.facebook.com/LandcareNSW" target="_blank">
+                <img src="images/facebook_icon.png" alt="Facebook icon">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://twitter.com/LandcareNSW" target="_blank">
+                <img src="images/twitter_icon.png" alt="Twitter icon">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://www.instagram.com/landcare_nsw/" target="_blank">
+                <img src="images/instagram_icon.png" alt="Instagram icon">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://www.linkedin.com/company/landcare-nsw/" target="_blank">
+                <img src="images/linkedin_icon.png" alt="Linkedin icon">
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Newsletter subscription section -->
+        <div class="footer_container">
+          <h4 class="footer_header">Stay Updated</h4>
+          <p>Sign up to our weekly newsletter to stay up to date with the latest news and upcoming events.</p>
+          <form>
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="example@email.com" required>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright section -->
+      <div id="copyright">
+        <figure>
+          <img src="images/logo.png" alt="Landcare NSW Logo" id="logo">
+        </figure>
+        <p>Copyright © 2020 Landcare NSW Inc. ABN 24 958 819 359</p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,113 @@
+/* MAIN section of the Projects Page */
+
+/* ABOUT US */
+main h2 {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#projects_title {
+  background-color: #f4f4f4;
+}
+
+#project_container {
+  display: flex;
+  padding: 60px 30px 60px 30px;
+  justify-content: center;
+}
+
+#project_container:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+#project_container:nth-child(odd) {
+  background-color: white;
+}
+
+#project_container div h3 {
+  color: #45B467;
+  padding-bottom: 10px;
+}
+
+#project_container div p {
+  padding-bottom: 20px;
+}
+
+/* Projects section on different screen sizes */
+@media only screen and (min-width: 320px) {
+  #project_container:nth-of-type(even) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #project_container:nth-of-type(odd) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project_container:nth-of-type(even) div {
+    margin-left: 0;
+  }
+
+  #project_container:nth-of-type(odd) div {
+    margin-right: 0;
+  }
+
+  #project_container figure img {
+    border-radius: 10px;
+    width: 270px;
+  }
+
+  #project_container div {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  #project_container:nth-of-type(even) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #project_container:nth-of-type(odd) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project_container:nth-of-type(even) div {
+    margin-left: 0;
+  }
+
+  #project_container:nth-of-type(odd) div {
+    margin-right: 0;
+  }
+
+  #project_container figure img {
+    border-radius: 15px;
+    width: 400px;
+  }
+
+  #project_container div {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #project_container:nth-of-type(even) {
+    flex-direction: row;
+    align-items: initial;
+  }
+
+  #project_container:nth-of-type(odd) {
+    flex-direction: row;
+    align-items: initial;
+  }
+
+  #project_container:nth-of-type(even) div {
+    margin-left: 60px;
+  }
+
+  #project_container:nth-of-type(odd) div {
+    margin-right: 60px;
+  }
+}

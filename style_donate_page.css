@@ -1,0 +1,151 @@
+/* Main general styling for DONATE page */
+main {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h3 {
+  margin-top: 35px;
+  font-size: 24px;
+}
+
+#get_involved_title {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#get_involved_form {
+  width: 480px;
+  margin-bottom: 60px;
+}
+
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main ul li {
+  list-style: none;
+}
+
+
+/* Details section styling */
+.details_section .label_title {
+  padding-bottom: 5px;
+}
+
+.details_input_large {
+  all: unset;
+  padding: 5px 5px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid grey;
+  height: 24px;
+  font-weight: 400;
+  transition: all 0.3s ease 0s;
+}
+
+.details_input_large:focus {
+  outline: 1px solid black;
+}
+
+#comment {
+  padding: 5px 5px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  max-height: 110px;
+  min-height: 70px;
+}
+
+#comment:focus {
+  outline: 1px solid black;
+}
+
+.label_title {
+  display: block;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.label_title:nth-child(1) {
+  margin-top: 10px;
+}
+
+.box_caption {
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+@media only screen and (min-width: 320px) {
+  .details_section {
+    justify-content: initial;
+  }
+
+  .details_input_large {
+    width: 280px;
+  }
+
+  #get_involved_form {
+    width: 290px;
+  }
+
+  #comment {
+    max-width: 290px;
+    min-width: 290px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .details_section {
+    justify-content: space-between;
+  }
+
+  .details_input_large {
+    width: 200px;
+  }
+
+  #get_involved_form {
+    width: 480px;
+  }
+
+  #comment {
+    max-width: 480px;
+    min-width: 480px;
+  }
+}
+
+
+/* Form Button */
+#form_button {
+  cursor: pointer;
+  background-color: #ffc16e;
+  border: 2px solid #ffc16e;
+  border-radius: 7px;
+  padding: 8px 15px;
+  transition: all .3s ease 0s;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  margin-top: 15px;
+  width: 100%;
+}
+
+#form_button:hover {
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+#form_button:active {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+#fill {
+  width: 100px;
+  height: 10px;
+}

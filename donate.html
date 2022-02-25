@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Landcare NSW - Donate</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link href="style_header_footer.css" rel="stylesheet" type="text/css" />
+    <link href="style_donate_page.css" rel="stylesheet" type="text/css" />
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER section -->
+    <header>
+      <div id="main_header">
+        <!-- LOGO -->
+        <figure>
+          <a href="/index.html"><img src="images/logo.png" alt="Landcare NSW Logo" id="logo"></a>
+        </figure>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <a href="/index.html" class="nav_link">Home</a>
+            <a href="/projects.html" class="nav_link">Projects</a>
+            <a href="/get_involved.html" class="nav_link">Get Involved</a>
+        </nav>
+        <div id="fill"></div>
+      </div>
+
+      <!-- HAMBURGER ICON -->
+      <div id="hamburger_icon">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+
+        <!-- DROPDOWN NAVIGATION -->
+        <nav class="dropdown_nav">
+          <a href="/index.html" class="dropdown_link">Home</a>
+          <a href="/projects.html" class="dropdown_link">Projects</a>
+          <a href="/get_involved.html" class="dropdown_link">Get Involved</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- MAIN section -->
+    <main>
+      <!-- DONATE title -->
+      <div id="get_involved_title">
+        <h2>Donate</h2>
+      </div>
+
+      <!-- GET INVOLVED form -->
+      <form id="get_involved_form">
+        
+        <!-- Donor Information section -->
+        <h3>Donor Information</h3>
+        <ul class="details_section">
+          <!-- First Name section -->
+      		<li>
+            <label for="first_name" class="label_title">First Name</label>
+            <input class="details_input_large" name="first_name" type="text" placeholder="John" required>
+      		</li>
+
+          <!-- Last Name section -->
+          <li>
+            <label for="last_name" class="label_title">Last Name</label>
+            <input class="details_input_large" name="last_name" type="text" placeholder="Smith" required>
+      		</li>
+
+          <!-- Email section -->
+          <li>
+            <label for="email" class="label_title">Email</label>
+            <input class="details_input_large" name="email" type="email" placeholder="johnsmith@gmail.com" required>
+      		</li>
+        </ul>
+
+
+        <!-- Donation Information -->
+        <h3>Donation Information</h3>
+        <ul class="details_section">
+          <!-- Donation Amount section -->
+      		<li>
+            <label for="donation_amount" class="label_title">Donation Amount</label>
+            <input class="details_input_large" name="donation_amount" type="number" placeholder="10" min="1" required>
+      		</li>
+
+          <!-- Card Holder Name section -->
+      		<li>
+            <label for="card_holder_name" class="label_title">Card Holder Name</label>
+            <input class="details_input_large" name="card_holder_name" type="text" placeholder="John Smith" required>
+      		</li>
+
+          <!-- Card Number section -->
+      		<li>
+            <label for="card_number" class="label_title">Card Number</label>
+            <input class="details_input_large" name="card_number" type="number" placeholder="1000 2000 3000 4000" required>
+      		</li>
+
+          <!-- Expiration Date section -->
+      		<li>
+            <label for="expiration_date" class="label_title">Expiration Date</label>
+            <input class="details_input_large" name="expiration_date" type="month" required>
+      		</li>
+
+          <!-- CVC Code section -->
+      		<li>
+            <label for="cvc_code" class="label_title">CVC Code</label>
+            <input class="details_input_large" name="cvc_code" type="number" placeholder="000" required>
+      		</li>
+
+        </ul>
+
+
+        <!-- Extra Information -->
+        <h3>Extra Information</h3>
+        <ul class="details_section">
+          <!-- Comment section -->
+          <li>
+            <label for="comment" class="label_title">Leave us a comment</label>
+            <textarea id="comment" name="comment" placeholder="Write something..."></textarea>
+      		</li>
+        </ul>
+
+        <button type="submit" id="form_button">Donate</button>
+      </form>
+    </main>
+
+
+    <!-- FOOTER section -->
+    <footer>
+      <div id="footer_info">
+        
+        <!-- Contact Details section -->
+        <div class="footer_container">
+          <h4 class="footer_header">Contact Details</h4>
+          <p>administration@landcarensw.org.au</p>
+          <p>02 8339 4816</p>
+          <p>
+            Unit 7,<br>
+            56 Church Avenue,<br>
+            Mascot NSW 2020<br>
+          </p>
+          <figure>
+            <img src="images/footer_icons.png" alt="Contact details icons" id="footer_icons">
+          </figure>
+        </div>
+
+        <!-- Social media links section -->
+        <div class="footer_container">
+          <h4 class="footer_header">Socials</h4>
+          Follow us on our social media accounts to stay connected and updated.
+          <div id="social_icons">
+            <figure>
+              <a href="https://www.facebook.com/LandcareNSW" target="_blank">
+                <img src="images/facebook_icon.png" alt="Facebook icon">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://twitter.com/LandcareNSW" target="_blank">
+                <img src="images/twitter_icon.png" alt="Twitter icon">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://www.instagram.com/landcare_nsw/" target="_blank">
+                <img src="images/instagram_icon.png" alt="Instagram icon">
+              </a>
+            </figure>
+            <figure>
+              <a href="https://www.linkedin.com/company/landcare-nsw/" target="_blank">
+                <img src="images/linkedin_icon.png" alt="Linkedin icon">
+              </a>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Newsletter subscription section -->
+        <div class="footer_container">
+          <h4 class="footer_header">Stay Updated</h4>
+          <p>Sign up to our weekly newsletter to stay up to date with the latest news and upcoming events.</p>
+          <form>
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="example@email.com" required>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright section -->
+      <div id="copyright">
+        <figure>
+          <img src="images/logo.png" alt="Landcare NSW Logo" id="logo">
+        </figure>
+        <p>Copyright © 2020 Landcare NSW Inc. ABN 24 958 819 359</p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
